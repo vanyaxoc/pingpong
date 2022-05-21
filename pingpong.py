@@ -46,6 +46,7 @@ class Player(GameSprite):
 
 raketka_1 = Player('прямоугольник.png', 10, 150, 50, 180, 4)
 raketka_2 = Player('прямоугольник.png', 520, 150, 50, 180, 4)
+ball = GameSprite('круг.png',300, 150,  70, 70, 4 )
 
 
 
@@ -61,6 +62,7 @@ while game:
     raketka_2.update_r()
     raketka_1.reset()
     raketka_2.reset()
+    ball.reset()
 
 
     display.update()
